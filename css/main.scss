@@ -1,0 +1,114 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+body {
+  background-color: $colorBackground;
+  color: $colorFont;
+  font-family: Calibri, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: $colorFont;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.header-content {
+  @include shadow-box();
+  @include border-box();
+  position: relative;
+  background: $colorBackgroundLighter;
+  width: 90%;
+  padding: 1em;
+  padding-bottom: 2.5em;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 1em;
+  @media #{$small} {
+    width: 75%;
+  }
+  @media #{$large} {
+    width: 50%;
+  }
+}
+
+h1.header-title {
+  @include flex-align();
+  @include w-h(5em, 5em);
+  @include shadow-box();
+  background-color: $colorAccent;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: -2.5em;
+  padding: 1.5em;
+  font-size: 1.2em;
+  border-radius: 100%;
+}
+
+h2.header-subtitle {
+  padding: 0.5em 0;
+  font-size: 1.2em;
+}
+.question-color {
+  font-size: 1.7em;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.tools {
+  background-color: $colorBackgroundLighter;
+  @include shadow-box();
+}
+
+.tools-button {
+  @include flex-align();
+  button {
+    @include shadow-box();
+    @include normal-speed-transition();
+    @include p-m(1em, 3em);
+    background-color: $colorAccent;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    color: $colorFont;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    &:hover {
+      background-color: $colorFont;
+      color: darken($colorAccent, 10%);
+      cursor: pointer;
+    }
+    @media #{$small} {
+      @include p-m(1em, 2em);
+    }
+  }
+}
+
+.fields-container {
+  @include w-h(75%, auto);
+  padding: 2em 0;
+  margin: auto;
+  text-align: center;
+}
+
+.color-field {
+  @include shadow-box();
+  @include w-h(60px, 60px);
+  @include p-m(2px, 10px);
+  @include normal-speed-transition();
+  @include border-box();
+  display: inline-block;
+  border-radius: 10%;
+  &:hover {
+    border-radius: 25%;
+    cursor: pointer;
+  }
+  @media #{$small} {
+    @include w-h(80px, 80px);
+  }
+  @media #{$medium} {
+    @include w-h(120px, 120px);
+  }
+}
