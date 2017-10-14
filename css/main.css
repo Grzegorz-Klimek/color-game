@@ -1,0 +1,117 @@
+body {
+  background-color: #333;
+  color: #eee;
+  font-family: Calibri, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+header {
+  color: #eee;
+  text-align: center;
+  padding: 2em 0; }
+
+.header-content {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  background: #4d4d4d;
+  width: 90%;
+  padding: 1em;
+  padding-bottom: 2.5em;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 1em; }
+  @media only screen and (min-width: 768px) {
+    .header-content {
+      width: 75%; } }
+  @media only screen and (min-width: 1200px) {
+    .header-content {
+      width: 50%; } }
+
+h1.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5em;
+  height: 5em;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: #407fa5;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: -2.5em;
+  padding: 1.5em;
+  font-size: 1.2em;
+  border-radius: 100%; }
+
+h2.header-subtitle {
+  padding: 0.5em 0;
+  font-size: 1.2em; }
+
+.question-color {
+  font-size: 1.7em;
+  font-family: 'Share Tech Mono', monospace; }
+
+.tools {
+  background-color: #4d4d4d;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.tools-button {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .tools-button button {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: all 0.3s;
+    padding: 1em;
+    margin: 3em;
+    background-color: #407fa5;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    color: #eee;
+    outline: none;
+    border: none;
+    text-transform: uppercase; }
+    .tools-button button:hover {
+      background-color: #eee;
+      color: #326380;
+      cursor: pointer; }
+    @media only screen and (min-width: 768px) {
+      .tools-button button {
+        padding: 1em;
+        margin: 2em; } }
+
+.fields-container {
+  width: 75%;
+  height: auto;
+  padding: 2em 0;
+  margin: auto;
+  text-align: center; }
+
+.color-field {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  width: 60px;
+  height: 60px;
+  padding: 2px;
+  margin: 10px;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 10%; }
+  .color-field:hover {
+    border-radius: 25%;
+    cursor: pointer; }
+  @media only screen and (min-width: 768px) {
+    .color-field {
+      width: 80px;
+      height: 80px; } }
+  @media only screen and (min-width: 992px) {
+    .color-field {
+      width: 120px;
+      height: 120px; } }
+
+/*# sourceMappingURL=main.css.map */
